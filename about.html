@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brian Pine | About</title>
+  <link rel="icon" type="image/png" href="images/about.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f6ef;
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a0e27;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #9f9471;
+    }
+    
+    main {
+      padding: 60px 40px;
+    }
+    .about-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+    .about-section img {
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .about-text {
+      max-width: 650px;
+      font-size: 1.15em;
+      line-height: 1.7;
+    }
+    .about-text h2 {
+      font-size: 2.2em;
+      margin-bottom: 15px;
+    }
+    .about-text h2 span {
+      color: #9f9471;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px;
+      gap: 40px;
+    }
+    .section {
+      flex: 1;
+      min-width: 300px;
+    }
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #9f9471;
+      padding-bottom: 10px;
+    }
+    .education-item, .skill-item, .certificate-item {
+      display: flex;
+      align-items: center;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .education-item:hover, .skill-item:hover, .certificate-item:hover {
+      transform: translateY(-5px);
+    }
+    .education-item img, .skill-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-right: 15px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .skill-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 140px;
+    }
+    .skill-item img {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .certificate-item img {
+      width: 280px;
+      height: auto;
+      object-fit: contain;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .education-text p {
+      margin: 4px 0;
+    }
+    footer {
+      background-color: #0a0e27;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 16px;
+    }
+    @media (max-width: 768px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .certificate-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      .certificate-item img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Brian <span>Pine</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <img src="images/Picture.jpg" alt="Kenneth Brian Pine" />
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <p>
+          I am Kenneth Brian Pine, a 4th-year IT student at Adamson University. I have skills in designing user-friendly apps and managing projects.
+          I worked on the 'AdU Foundit' mobile app as a designer, programmer, and writer. I also used Adobe XD to make app designs and helped with project documents.
+          I hosted TechnoSummit 4.0, which improved my speaking and leadership skills. I am good at solving problems, working with others, adjusting to changes, and accepting feedback.
+        </p>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="section">
+        <h2>Education</h2>
+        <div class="education-item">
+          <img src="images/AdU.png" alt="Adamson University Logo">
+          <div class="education-text">
+            <p><strong>Adamson University</strong></p>
+            <p><em>Tertiary Education</em></p>
+            <p>Bachelor of Science in Information Technology</p>
+          </div>
+        </div>
+        <div class="education-item">
+          <img src="images/SCPS.png" alt="Sta. Clara Parish School Logo">
+          <div class="education-text">
+            <p><strong>Sta. Clara Parish School</strong></p>
+            <p><em>Senior High School</em></p>
+            <p>Science, Technology and Mathematics</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-item">
+            <img src="images/adobexd.png" alt="Adobe XD">
+            <p>Adobe XD</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/canva.png" alt="Canva">
+            <p>Canva</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/problem-solving.png" alt="Problem Solving">
+            <p>Problem Solving Skills</p>
+          </div>
+          <div class="skill-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Technical Support">
+            <p>Technical Support</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/collaborative.png" alt="Collaborative Projects">
+            <p>Works in Collaborative Projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <h2>Certificates</h2>
+        <div class="certificate-item">
+          <a href="images/Certiport.png.jpg" target="_blank">
+            <img src="images/Certiport.png.jpg" alt="certiport">
+          </a>
+          <div class="education-text">
+            <p><strong>Information Technology Specialist On Databases</strong></p>
+            <p>I am officially certified as an Information Technology Specialist in Databases by Certiport, demonstrating my skills in database management, SQL, and data handling.</p>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <a href="images/UICertificate.png" target="_blank">
+            <img src="images/UICertificate.png" alt="UICertificate">
+          </a>
+          <div class="education-text">
+            <p><strong>Developing Designs for User Interface</strong></p>
+            <p>I completed the TESDA course on Developing Designs for User Interface, strengthening my skills in creating user-friendly and visually appealing UI designs.</p>
+          </div>
+        </div>
+
+        <div class="certificate-item">
+          <a href="images/UXCertificate.png" target="_blank">
+            <img src="images/UXCertificate.png" alt="UXCertificate">
+          </a>
+          <div class="education-text">
+            <p><strong>Developing Designs for User Experience</strong></p>
+            <p>This TESDA course helped me enhance my skills in building effective and engaging designs focused on user needs and satisfaction.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Built by Kenneth Brian Pine © 2025
+  </footer>
+</body>
+</html>

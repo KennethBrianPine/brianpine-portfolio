@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brian Pine | Projects</title>
+  <link rel="icon" type="image/png" href="images/projects.png" />
+  <style>
+   
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f6ef;
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a0e27;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #9f9471;
+    }
+
+    .container {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 10px;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    .project-card {
+      background-color: var(--white);
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .projects-text {
+      padding: 20px;
+    }
+
+    .projects-text p:first-child {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: var(--accent);
+    }
+
+    .projects-text p:nth-child(2) {
+      font-size: 1em;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .projects-text p:last-child {
+      margin-top: 10px;
+      font-size: 0.95em;
+      text-align: justify;
+    }
+
+    @media (max-width: 768px) {
+        header {
+        flex-direction: column;
+        align-items: flex-start;
+      
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Brian <span>Pine</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <a href="images/wok-1.png" target="_blank">
+            <img src="images/wok-1.png" alt="AdU Foundit Project">
+          </a>
+          <div class="projects-text">
+            <p>Thesis and Capstone Project</p>
+            <p>AdU Foundit</p>
+            <p>AdU FoundIt is a mobile application that simplifies the management of lost and found items in Adamson University. It offers real-time access to surrendered items, a digital claim form, and dashboard analytics to track item trends within the university.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <a href="images/wok-2.png" target="_blank">
+            <img src="images/wok-2.png" alt="wok-2.png">
+          </a>
+          <div class="projects-text">
+            <p>Design Thinking Project</p>
+            <p>Colenailsmnl Website</p>
+            <p>This project aimed to modernize Colenailsmnl's digital presence through a tailored IT solution with empathetic user research, streamlined appointment booking, and client personalization—offering a modern, aesthetic, and efficient salon experience.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

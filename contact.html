@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brian Pine | Contact</title>
+   <link rel="icon" type="image/png" href="images/contact.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f6ef;
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a0e27;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #9f9471;
+    }
+
+    /* Contact Section */
+    .container {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 2.4rem;
+      color: #0a0e27;
+      margin-bottom: 10px;
+    }
+
+    .section h3 {
+      font-weight: 400;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .contact-left, .contact-right {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .contact-left h3 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: #0a0e27;
+    }
+
+    .contact-left p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .email {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .email i {
+      color: #9f9471;
+      font-size: 18px;
+    }
+
+    .social-icons a {
+      font-size: 22px;
+      margin-right: 15px;
+      color: #444;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #9f9471;
+    }
+
+    .contact-form {
+      background-color: white;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .contact-form:hover {
+      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.08);
+    }
+
+    .contact-form label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s ease;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #9f9471;
+      outline: none;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-form button {
+      background-color: #9f9471;
+      color: #fff;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #7c7155;
+    }
+
+    footer {
+      background-color: #0a0e27;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">Brian <span>Pine</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+      <h2>Contact Me</h2>
+      <h3>Please fill out the form below to discuss potential job opportunities.</h3>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-left">
+        <h3>Let’s work together</h3>
+        <p>Thank you for visiting my portfolio! If you have questions, ideas, or want to collaborate, feel free to get in touch. I’ll respond as soon as possible.</p>
+
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <span>kennethbrianpine@gmail.com</span>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/pinebrian/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://instagram.com/brianpine_?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/kenneth-brian-pine-b094462a3/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-right contact-form">
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" required>
+
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Built by Kenneth Brian Pine © 2025
+  </footer>
+
+</body>
+</html>

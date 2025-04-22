@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brian Pine | Home</title>
+  <link rel="icon" type="image/png" href="images/home.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f6ef;
+      color: #333;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0a0e27;
+      padding: 20px 60px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      color: white;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ccc;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #9f9471;
+    }
+
+    main {
+      flex: 1;
+      padding: 60px 40px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .content {
+      max-width: 500px;
+    }
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    h2 span {
+      color: #0a0e27;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #8b7c5b;
+      color: white;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 12px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+      background-color: #7c6f4e;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: #333;
+    }
+
+    .btn-secondary:hover {
+      background-color: #555;
+    }
+
+    .social-icons {
+      margin-top: 25px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+    }
+
+    .profile img {
+      width: 340px;
+      height: 340px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 5px solid #0a0e27;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    footer {
+      background-color: #0a0e27;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+      }
+
+      .profile img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Brian <span>Pine</span></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="content">
+        <h2>Hello, I’m <span>Brian Pine</span></h2>
+        <p>I am an Information Technology graduate specializing in Mobile and Web Development based in Pasay, Philippines.</p>
+        <div class="buttons">
+          <a href="about.html" class="btn">More About Me</a>
+          <a href="CV.pdf" download class="btn btn-secondary">Download CV</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/pinebrian/"><img src="images/facebook-icon.png" alt="Facebook" /></a>
+          <a href="https://instagram.com/brianpine_?igshid=OGQ5ZDc2ODk2ZA=="><img src="images/instagram-icon.png" alt="Instagram" /></a>
+          <a href="https://www.linkedin.com/in/kenneth-brian-pine-b094462a3/"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+      <div class="profile">
+        <img src="images/user.png.png" alt="Brian Pine" />
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built by Kenneth Brian Pine © 2025
+  </footer>
+</body>
+</html>
